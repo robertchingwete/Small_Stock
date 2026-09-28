@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smallstock Expo 2025 - Empowering Agriculture, Elevating Livestock</title>
+    <meta name="description" content="Join the premier small stock farming expo featuring elite livestock showcases, live auctions, expert workshops, and networking opportunities.">
+    <meta name="keywords" content="smallstock, agriculture, livestock, farming, expo, goats, sheep, poultry, rabbits">
+    <link rel="stylesheet" href="styles.css">
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+<body>
+ <header id="header">
+    <nav class="container">
+            </span>
+            <span class="logo-text">
+                <span class="logo-primary">SMALL-STOCK</span>
+                <span class="logo-secondary">SHOW</span>
+            </span>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#home"><span>Home</span></a></li>
+            <li><a href="#about"><span>About</span></a></li>
+            <li><a href="#program"><span>Program</span></a></li>
+            <li><a href="#exhibitors"><span>Exhibitors</span></a></li>
+            <li><a href="#contact"><span>Contact</span></a></li>
+        </ul>
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </nav>
+</header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content container">
+            <div class="hero-text">
+                <h1 class="hero-title">
+                    <span class="highlight">Empowering Agriculture</span>
+                    <span>Elevating Livestock</span>
+                </h1>
+                <p class="hero-subtitle">Join the premier small stock farming expo connecting breeders, farmers, and industry experts across Africa</p>
+                
+                <!-- Countdown Timer -->
+                <div class="countdown-container">
+                    <h3>Event Starts In:</h3>
+                    <div class="countdown" id="countdown">
+                        <div class="time-unit">
+                            <span class="number" id="days">00</span>
+                            <span class="label">Days</span>
+                        </div>
+                        <div class="time-unit">
+                            <span class="number" id="hours">00</span>
+                            <span class="label">Hours</span>
+                        </div>
+                        <div class="time-unit">
+                            <span class="number" id="minutes">00</span>
+                            <span class="label">Minutes</span>
+                        </div>
+                        <div class="time-unit">
+                            <span class="number" id="seconds">00</span>
+                            <span class="label">Seconds</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- CTA Buttons -->
+                <div class="cta-buttons">
+                    <a href="sponsor-registration.html">
+                        <button class="btn btn-primary" id="registerBtn">Become a Sponsor</button>
+                    </a>
+                    <a href="exhibitor-registration.html">
+                        <button class="btn btn-secondary" id="registerBtn">Become an Exhibitor</button>
+                    </a>
+                </div>
+            </div>
+            
+           <div class="hero-image">
+                <div class="slideshow-container" id="slideshow">
+                    <!-- Slide 1 -->
+                    <div class="slide active">
+                        <img src="https://i.pinimg.com/736x/78/27/dc/7827dc961a1c93ddc42b25ab351b73f5.jpg" alt="Premium Livestock">
+                        <div class="slide-content">
+                            <div class="slide-title">Premium Livestock Showcase</div>
+                            <div class="slide-description">Discover the finest breeding stock from across Africa</div>
+                        </div>
+                    </div>
+                    
+                    <!-- Slide 2 -->
+                    <div class="slide">
+                        <img src="https://i.pinimg.com/736x/9a/6a/7a/9a6a7a7cea186601e5736ce769fa51c2.jpg" alt="Cow Breeding">
+                        <div class="slide-content">
+                            <div class="slide-title">Goat Breeding Excellence</div>
+                            <div class="slide-description">Learn from expert breeders and veterinarians</div>
+                        </div>
+                    </div>
+                    
+                    <!-- Slide 3 -->
+                    <div class="slide">
+                        <img src="https://i.pinimg.com/736x/d2/05/5b/d2055b284493daec0724ac2fb040737b.jpg" alt="Farming Technology">
+                        <div class="slide-content">
+                            <div class="slide-title">Modern Farming Solutions</div>
+                            <div class="slide-description">Explore cutting-edge agricultural technology</div>
+                        </div>
+                    </div>
+                    
+                    <!-- Slide 4 -->
+                    <div class="slide">
+                        <img src="https://i.pinimg.com/736x/78/dc/d3/78dcd3d39929c082708bfc7af442284b.jpg" alt="Agricultural Fair">
+                        <div class="slide-content">
+                            <div class="slide-title">Industry Networking</div>
+                            <div class="slide-description">Connect with farmers, suppliers, and experts</div>
+                        </div>
+                    </div>
+                    
+                    <!-- Navigation arrows -->
+                    <button class="slide-arrow prev" id="prevBtn">‹</button>
+                    <button class="slide-arrow next" id="nextBtn">›</button>
+                    
+                    <!-- Navigation dots -->
+                    <div class="slideshow-nav">
+                        <span class="nav-dot active" data-slide="0"></span>
+                        <span class="nav-dot" data-slide="1"></span>
+                        <span class="nav-dot" data-slide="2"></span>
+                        <span class="nav-dot" data-slide="3"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Key Features Section -->
+    <section class="features" id="about">
+        <div class="container">
+            <h2 class="section-title">Why Choose Smallstock Expo?</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🏆</div>
+                    <h3>Elite Livestock Showcases</h3>
+                    <p>Discover top-tier breeds, genetics, and cutting-edge husbandry techniques from leading breeders</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">⚡</div>
+                    <h3>Live Auctions</h3>
+                    <p>Bid on premium livestock, equipment, and breeding stock in high-energy auction sessions</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🎓</div>
+                    <h3>Expert Workshops</h3>
+                    <p>Learn from industry leaders on herd management, disease prevention, and market trends</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🤝</div>
+                    <h3>Networking Hub</h3>
+                    <p>Connect with exhibitors, buyers, and agricultural organizations driving innovation</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">👨‍👩‍👧‍👦</div>
+                    <h3>Family-Friendly</h3>
+                    <p>Engage in hands-on demonstrations, competitions, and farm-to-table experiences</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🚀</div>
+                    <h3>Innovation Spotlight</h3>
+                    <p>Explore the latest technologies and sustainable practices in small stock farming</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+  <!-- Program Section -->
+<section class="program" id="program">
+    <div class="container">
+        <h2 class="section-title">One Day Program</h2>
+        <p class="section-subtitle">A comprehensive day packed with livestock showcases, expert sessions, and networking opportunities</p>
+        
+        <!-- Single Program Card -->
+        <div class="program-card">
+            <!-- Event Header -->
+            <div class="program-header">
+                <h3>📅 Saturday, November 1, 2025</h3>
+                <p>Sebele Agricultural Showgrounds</p>
+            </div>
+
+            <!-- Program Timeline -->
+            <div class="program-timeline">
+                <!-- Morning -->
+                <div class="session-block">
+                    <h4 class="session-title">🌅 Morning Session</h4>
+                    <div class="timeline-items">
+                        <div class="timeline-row">
+                            <span class="time">7:00 - 8:30 AM</span>
+                            <span class="activity">🎪 Registration & Welcome</span>
+                            <span class="location">Main Entrance</span>
+                        </div>
+                        <div class="timeline-row">
+                            <span class="time">8:30 - 9:00 AM</span>
+                            <span class="activity">🎤 Opening Ceremony</span>
+                            <span class="location">Main Arena</span>
+                        </div>
+                        <div class="timeline-row">
+                            <span class="time">9:00 - 10:30 AM</span>
+                            <span class="activity">🐐 Goat Breeding Workshop</span>
+                            <span class="location">Workshop Hall A</span>
+                        </div>
+                        <div class="timeline-row">
+                            <span class="time">10:30 - 11:00 AM</span>
+                            <span class="activity">☕ Networking Break</span>
+                            <span class="location">Exhibition Area</span>
+                        </div>
+                        <div class="timeline-row">
+                            <span class="time">11:00 - 12:30 PM</span>
+                            <span class="activity">🐑 Sheep Farming Excellence</span>
+                            <span class="location">Workshop Hall B</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Afternoon -->
+                <div class="session-block">
+                    <h4 class="session-title">☀️ Afternoon Session</h4>
+                    <div class="timeline-items">
+                        <div class="timeline-row">
+                            <span class="time">12:30 - 1:30 PM</span>
+                            <span class="activity">🍽️ Lunch Break</span>
+                            <span class="location">Dining Pavilion</span>
+                        </div>
+                        <div class="timeline-row">
+                            <span class="time">1:30 - 2:30 PM</span>
+                            <span class="activity">🏆 Livestock Competition</span>
+                            <span class="location">Show Ring</span>
+                        </div>
+                        <div class="timeline-row">
+                            <span class="time">2:30 - 3:30 PM</span>
+                            <span class="activity">🐔 Poultry & Rabbit Farming</span>
+                            <span class="location">Workshop Hall A</span>
+                        </div>
+                        <div class="timeline-row">
+                            <span class="time">3:30 - 4:00 PM</span>
+                            <span class="activity">🔧 Innovation Showcase</span>
+                            <span class="location">Tech Pavilion</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Evening -->
+                <div class="session-block">
+                    <h4 class="session-title">🌆 Evening Session</h4>
+                    <div class="timeline-items">
+                        <div class="timeline-row">
+                            <span class="time">4:00 - 5:30 PM</span>
+                            <span class="activity">🔨 Live Auction</span>
+                            <span class="location">Auction Arena</span>
+                        </div>
+                        <div class="timeline-row">
+                            <span class="time">5:30 - 6:00 PM</span>
+                            <span class="activity">🏅 Awards Ceremony</span>
+                            <span class="location">Main Arena</span>
+                        </div>
+                        <div class="timeline-row">
+                            <span class="time">6:00 - 7:00 PM</span>
+                            <span class="activity">🎉 Networking Reception</span>
+                            <span class="location">Outdoor Pavilion</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Program Footer
+            <div class="program-footer">
+                <div class="highlights-row">
+                    <div class="highlight-item">
+                        <span class="highlight-number">10+</span>
+                        <span class="highlight-text">Expert Sessions</span>
+                    </div>
+                    <div class="highlight-item">
+                        <span class="highlight-number">3</span>
+                        <span class="highlight-text">Live Competitions</span>
+                    </div>
+                    <div class="highlight-item">
+                        <span class="highlight-number">1</span>
+                        <span class="highlight-text">Premium Auction</span>
+                    </div>
+                    <div class="highlight-item">
+                        <span class="highlight-number">500+</span>
+                        <span class="highlight-text">Expected Attendees</span>
+                    </div>
+                </div>  -->
+                <div class="program-footer">
+                    <div class="program-cta">
+              <button class="download-btn" onclick="generatePDF()">📥 Download Program PDF</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    <!-- Featured Exhibitors Section -->
+    <section class="exhibitors" id="exhibitors">
+        <div class="container">
+            <h2 class="section-title">Featured Exhibitors</h2>
+            <p class="section-subtitle">Meet our premium exhibitors showcasing the best in small stock farming</p>
+            
+            <div class="exhibitors-grid">
+                <div class="exhibitor-card">
+                    <div class="exhibitor-logo">
+                        <span class="logo-placeholder">🐐</span>
+                    </div>
+                    <h4>Premium Goat Genetics</h4>
+                    <p>Leading Boer goat breeder specializing in superior genetics and breeding programs</p>
+                    <div class="exhibitor-category">Goat Breeding</div>
+                </div>
+                
+                <div class="exhibitor-card">
+                    <div class="exhibitor-logo">
+                        <span class="logo-placeholder">🐑</span>
+                    </div>
+                    <h4>Dorper Excellence Farm</h4>
+                    <p>Award-winning Dorper sheep specialists with over 20 years of breeding excellence</p>
+                    <div class="exhibitor-category">Sheep Breeding</div>
+                </div>
+                
+                <div class="exhibitor-card">
+                    <div class="exhibitor-logo">
+                        <span class="logo-placeholder">🐔</span>
+                    </div>
+                    <h4>Poultry Innovation Hub</h4>
+                    <p>Modern poultry equipment and sustainable farming solutions for small-scale farmers</p>
+                    <div class="exhibitor-category">Poultry Equipment</div>
+                </div>
+                
+                <div class="exhibitor-card">
+                    <div class="exhibitor-logo">
+                        <span class="logo-placeholder">🐰</span>
+                    </div>
+                    <h4>Rabbit Breeding Co.</h4>
+                    <p>Premium rabbit breeds and comprehensive breeding support for commercial operations</p>
+                    <div class="exhibitor-category">Rabbit Breeding</div>
+                </div>
+            </div>
+            
+            <div class="exhibitor-cta">
+                <button class="btn btn-outline" id="viewAllExhibitors">View All Exhibitors</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sponsors Section -->
+    <section class="sponsors">
+        <div class="container">
+            <h2 class="section-title">Our Proud Sponsors</h2>
+            <div class="sponsors-grid">
+                <div class="sponsor-logo">
+                    <span class="sponsor-placeholder">AgriBank</span>
+                </div>
+                <div class="sponsor-logo">
+                    <span class="sponsor-placeholder">FarmTech Solutions</span>
+                </div>
+                <div class="sponsor-logo">
+                    <span class="sponsor-placeholder">Livestock Genetics Co.</span>
+                </div>
+                <div class="sponsor-logo">
+                    <span class="sponsor-placeholder">Feed Masters</span>
+                </div>
+                <div class="sponsor-logo">
+                    <span class="sponsor-placeholder">Veterinary Plus</span>
+                </div>
+                <div class="sponsor-logo">
+                    <span class="sponsor-placeholder">Rural Development Fund</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Event Stats -->
+    <section class="stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-number" data-target="500">0</div>
+                    <div class="stat-label">Expected Exhibitors</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-target="2500">0</div>
+                    <div class="stat-label">Anticipated Visitors</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-target="50">0</div>
+                    <div class="stat-label">Expert Workshops</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-target="3">0</div>
+                    <div class="stat-label">Days of Excellence</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action Section -->
+    <section class="final-cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Elevate Your Livestock Business?</h2>
+                <p>Join hundreds of farmers, breeders, and industry experts at the most comprehensive small stock expo in the region</p>
+                <div class="cta-buttons">
+                      <a href="sponsor-registration.html">
+                        <button class="btn btn-primary" id="registerBtn">Become a Sponsor</button>
+                    </a>
+                    <a href="exhibitor-registration.html">
+                        <button class="btn btn-secondary" id="registerBtn">Become an Exhibitor</button>
+                    </a>
+                </div>
+                
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <strong>📅 Date:</strong> November 1, 2025
+                    </div>
+                    <div class="contact-item">
+                        <strong>📍 Venue:</strong> Sebele Agricultural  Showgrounds
+                    </div>
+                    <div class="contact-item">
+                        <strong>📞 Contact:</strong> +267 123 4567
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="logo">
+                        <span class="logo-icon"></span>
+                        Smallstock Expo
+                    </div>
+                    <p>Empowering agriculture and elevating livestock across Africa through innovation, education, and networking.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#schedule">Schedule</a></li>
+                        <li><a href="#exhibitors">Exhibitors</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Connect</h4>
+                    <div class="social-link" style="display: flex; gap: 16px; align-items: center; margin-top: 8px;">
+                        <a href="https://www.facebook.com" class="social-link" aria-label="Facebook" style="display: inline-flex; width: 32px; height: 32px; border-radius: 50%; background: #1877f2; justify-content: center; align-items: center; transition: background 0.2s;">
+                            <img src="assets/facebook-brands.svg" alt="Facebook" style="width: 18px; height: 18px; filter: brightness(0) invert(1);">
+                        </a>
+                        <a href="https://x.com/login?" class="social-link" aria-label="Twitter" style="display: inline-flex; width: 32px; height: 32px; border-radius: 50%; background: #000; justify-content: center; align-items: center; transition: background 0.2s;">
+                            <img src="assets/x-twitter-brands.svg" alt="Twitter" style="width: 18px; height: 18px; filter: brightness(0) invert(1);">
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-section" id="contact">
+                    <h4>Contact Info</h4>
+                    <div class="contact-details">
+                        <p>📧 info@smallstockexpo.com</p>
+                        <p>📞 +267 123 4567</p>
+                        <p>📍 Gaborone, Botswana</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Smallstock Expo. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
